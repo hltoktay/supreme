@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+@import url("./sidebar.css");
+@import url("./carousel.css");
+@import url("./menu.css");
+@import url("./hungry.css");

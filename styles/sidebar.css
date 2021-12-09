@@ -1,0 +1,32 @@
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 0 0 -40px
+}
+
+.sidebar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    background: #b3b2b2;
+    color: #000000 !important;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px 0px;
+    width: 120%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -1px;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    transition: all ease .8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    transform: rotate(-20deg);
+}
+

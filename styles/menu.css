@@ -1,0 +1,8 @@
+@media (max-width: 576px) { 
+    .menu {
+       padding: 10px 0px !important;
+       width: 100% !important;
+       align-content: center;
+       margin: 0 10px
+    }
+ }
