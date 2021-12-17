@@ -1,0 +1,139 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "content": "Lunch Time Deal",
+      "content_img": "",
+      "alt_menu": [
+          {
+          "id": 1,
+          "title": "1/4 Burger Meal",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+          },
+           {
+          "id": 2,
+          "title": "1/2 Burger Meal",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+          },
+           {
+          "id": 3,
+          "title": "Veggi Burger Meal",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "content": "Meal Deals",
+      "content_img": "",
+        "alt_menu": [
+        {
+          "id": 1,
+          "title": "Chicken Burger Meal",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        },
+         {
+          "id": 2,
+          "title": "Burger Meal",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        },
+         {
+          "id": 3,
+          "title": "Hawaiian Chicken",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "content": "Chicken",
+      "content_img": "",
+        "alt_menu": [
+        {
+          "id": 1,
+          "title": "Whole Chicken",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        },
+         {
+          "id": 2,
+          "title": "Supreme Chicken",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        },
+         {
+          "id": 3,
+          "title": "Chicken Burger",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "content": "Vegetarian & Salad",
+      "content_img": "",
+        "alt_menu": [
+         {
+          "id": 1,
+          "title": "Mixed Salad",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         },
+          {
+          "id": 2,
+          "title": "Chips & Burger",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         },
+          {
+          "id": 3,
+          "title": "Halloumi",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         }
+      ]
+    },
+    {
+      "id": 5,
+      "content": "Doners",
+      "content_img": "",
+        "alt_menu": [
+        {
+          "id": 1,
+          "title":" Doner Wrap",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+       },
+        {
+          "id": 2,
+          "title": "Chips & Doner",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+       },
+        {
+          "id": 3,
+          "title": "Doner Burger",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+       }
+      ]
+    },
+    {
+      "id": 6,
+      "content": "Grills",
+      "content_img": "",
+        "alt_menu": [
+         {
+          "id": 1,
+          "title": "Lamb Grill",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         },
+          {
+          "id": 2,
+          "title": "Chips & Burger",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         },
+          {
+          "id": 3,
+          "title": "Chicken Grill",
+          "desc": "Lorem ipsum lorem ipsum lorem ipsum"
+         }
+      ]
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
