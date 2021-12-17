@@ -5,8 +5,10 @@ import CardMenu from '../components/CardMenu';
 import Hungry from '../components/Hungry';
 import Footer from '../components/Footer';
 
-const Home = ({ menu }) => {
-  console.log(menu)
+import fetch from 'isomorphic-unfetch'
+
+const Home = ({  }) => {
+  console.log()
 
    return (
     <div className="">
@@ -20,7 +22,7 @@ const Home = ({ menu }) => {
         <div className="col-11 main" id="main">
           <Carousel />
       
-       
+        <CardMenu />
 
           <Hungry />
         </div>
@@ -31,16 +33,14 @@ const Home = ({ menu }) => {
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { API_URL } = process.env
 
-  const res = await fetch(`${API_URL}/api/menus?fields=menu_title`)
+  const res = await fetch(`${API_URL}/hltoktay/supreme/db`)
   const data = await res.json()
 
   return {
-    props: {
-      menu: data.data
-    }
+    data
   }
 }
 

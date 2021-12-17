@@ -1,7 +1,7 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch'
 
-function CardMenu({ menu }) {
+function CardMenu({ props }) {
   
 
   return (
@@ -24,7 +24,7 @@ function CardMenu({ menu }) {
             <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
             <div className="card-body">
-             <h1>{menu.menu_title}</h1>
+             <h1>BURGER</h1>
             </div>
           </div>
         </div>
