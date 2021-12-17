@@ -1,7 +1,7 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch'
 
-function CardMenu({ props }) {
+function CardMenu({ categories }) {
   
 
   return (
@@ -19,44 +19,19 @@ function CardMenu({ props }) {
         <div className="container">
 
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center px-5 menu">
-        <div className="col">
+        
+        {categories.map(category => (
+           <div className="col">
           <div className="card shadow-sm">
             <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
             <div className="card-body">
-             <h1>BURGER</h1>
+             <h1>{category.content}</h1>
             </div>
           </div>
         </div>
-        <div className="col">
-          <div className="card shadow-sm">
-            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div className="card-body">
-             <h1>BURGER</h1>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card shadow-sm">
-            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div className="card-body">
-             <h1>BURGER</h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="card shadow-sm">
-            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div className="card-body">
-             <h1>BURGER</h1>
-            </div>
-          </div>
-        </div>
-        <div className="col">
+         ))}
+        {/* <div className="col">
           <div className="card shadow-sm">
             <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
@@ -102,6 +77,34 @@ function CardMenu({ props }) {
             </div>
           </div>
         </div>
+
+        <div className="col">
+          <div className="card shadow-sm">
+            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div className="card-body">
+             <h1>BURGER</h1>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div className="card-body">
+             <h1>BURGER</h1>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card shadow-sm">
+            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div className="card-body">
+             <h1>BURGER</h1>
+            </div>
+          </div>
+        </div> */}
       </div>
         </div>
       </div>
