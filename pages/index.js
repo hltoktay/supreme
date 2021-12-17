@@ -24,17 +24,6 @@ const Home = ({ categories }) => {
 
           <CardMenu key={categories.id} categories={categories} />
     
-         {/* {categories.map(category => (
-           <div key={category.id} className="col">
-          <div className="card shadow-sm">
-            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div className="card-body">
-             <h1>{ category.content}</h1>
-            </div>
-          </div>
-        </div>
-         ))} */}
 
           <Hungry />
         </div>
@@ -48,7 +37,7 @@ const Home = ({ categories }) => {
 export const getStaticProps = async () => {
   const { API_URL } = process.env
 
-  const res = await fetch(`${API_URL}/hltoktay/supreme/db`)
+  const res = await fetch(`${API_URL}/hltoktay/supreme/categories`)
   const data = await res.json()
 
  
