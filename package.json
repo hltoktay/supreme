@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.10.0",
+    "contentful": "^9.1.5",
     "dotenv": "^10.0.0",
     "isomorphic-unfetch": "^3.1.0",
     "next": "^12.0.7",

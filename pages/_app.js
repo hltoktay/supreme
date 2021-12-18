@@ -2,14 +2,16 @@ import '../styles/globals.css'
 
 import Sidebar from '../components/Sidebar';
 import Carousel from '../components/Carousel';
+import Layout from '../components/Layout';
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-        {/* <Sidebar />
-        <Carousel /> */}
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+
     </>
   )
 }
