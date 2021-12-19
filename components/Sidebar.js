@@ -12,29 +12,34 @@ export default function Sidebar() {
                     </header>
 
                     <li className="nav-item">
-                        <a href="#" className="nav-link" aria-current="page">
+                        <a href="/foods" className="nav-link" aria-current="page">
                             Our Food
                          </a>
                     </li>
 
                     <li className="nav-item">
-                        <a href="#" className="nav-link" aria-current="page">
+                        <a href="/locations" className="nav-link" aria-current="page">
                             Locations
                          </a>
                     </li>
 
                     <li className="nav-item ">
-                        <a href="#" className="nav-link" aria-current="page">
+                        <a href="/online" className="nav-link" aria-current="page">
                             Order <br />Online
                          </a>
                     </li>
 
                     <li className="nav-item ">
-                        <a href="#" className="nav-link" aria-current="page">
+                        <a href="/contact" className="nav-link" aria-current="page">
                             Contact
                          </a>
                     </li>
                 </ul>
+
+
+        <style jsx>{`
+         
+        `}</style>
             </div>
             
             </>

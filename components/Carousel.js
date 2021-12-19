@@ -5,14 +5,14 @@ export default function Carousel() {
       <>
       
     
-<div id="myCarousel" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/banner1.png" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"/>
+        <img src="/banner1.png" class="bd-placeholder-img img-fluid" width="100%" height="100%" aria-hidden="true" focusable="false"/>
         
 
         <div class="container">
@@ -24,7 +24,7 @@ export default function Carousel() {
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/banner2.png" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" focusable="false"/>
+        <img src="/banner2.png" class="bd-placeholder-img img-fluid" width="100%" height="100%" aria-hidden="true" focusable="false"/>
 
         <div class="container">
           <div class="carousel-caption">

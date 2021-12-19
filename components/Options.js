@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Hungry() {
+export default function Options() {
     return (
       <>
       <section className="section_buttons">

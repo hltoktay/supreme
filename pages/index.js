@@ -30,7 +30,7 @@ const Home = ({ categories }) => {
      <div>
        <section className="text-center container">
          <div className="row py-lg-5">
-           <div className="col-lg-6 col-md-8 mx-auto">
+           <div className="col-lg-6 col-md-8 col-sm-12 mx-auto">
              <h1 className="fw-bold">OUR MENU</h1>
            </div>
          </div>
@@ -39,7 +39,7 @@ const Home = ({ categories }) => {
        <div className="album px-3 bg-light menu">
          <div className="container">
 
-           <div className="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3 text-center px-5 menu">
+           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-3 g-3 text-center px-5 menu">
 
              {categories.map(category => (
                <CardMenu key={category.sys.id} category={category} />

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Carousel from './Carousel';
 import Sidebar from './Sidebar';
-import Hungry from './Hungry';
+import Options from './Options';
 import Footer from './Footer';
 
 export default function Layout({ children }) {
@@ -26,7 +26,7 @@ export default function Layout({ children }) {
                         </div>
 
 
-                        <Hungry />
+                        <Options />
                     </div>
                 </div>
                 <Footer />

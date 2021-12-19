@@ -20,7 +20,7 @@ export default function Footer() {
         <li><a class="link-secondary" href="#">Customer Services</a></li>
         <li><a class="link-secondary" href="#">Terms and Condition</a></li>
         <li><a class="link-secondary" href="#">Privacy Policy</a></li>
-        <li><a class="link-secondary" href="#">Contact Us</a></li>
+        <li><a class="link-secondary" href="#">Franchising</a></li>
       </ul>
     </div>
     <div class="col-3 col-md">
