@@ -44,10 +44,9 @@ export default function MenuDetails({ menu }) {
     const { featuredImage, title, ingredients, description } = menu.fields
 
     return (
-      <div style={{ marginLeft: "100px" }}>
-        <div className="banner">
+      <div className="menu-header">
+        <div className="banner p-3">
           <img
-            style={{width: '350px', height: 'auto', borderRadius: '25px', boxShadow: '6px 4px 6px #918f91', marginBottom: '20px'}}
             className="image"
             src={"https:" + featuredImage.fields.file.url}
             width={featuredImage.fields.file.details.image.width}
@@ -57,25 +56,36 @@ export default function MenuDetails({ menu }) {
           <h2 className="text-uppercase fw-bolder">{title}</h2>
         </div>
 
-        <div className="info">
+        <div className="info p-3">
           <p>{documentToReactComponents(description)}</p>
           <h3>Ingredients: </h3>
 
           {ingredients.map(ing => (
             <span key={ing}> {ing}</span>
           ))}
+           
         </div>
+      
 
         <style jsx>{`
-          .banner {
-            width: 400px;
+          .menu-header {
+            width: 100%;
+            margin-left: 100px;
           }
-          @media (max-width: 376px) { 
-            .banner .image {
-            width: 100px;
-            height: 100px
+
+          @media (max-width: 576px) {
+            .menu-header {
+              width: 100%;
+              margin: 0px 0px;
+            }
           }
-           }
+          .banner img {
+            width: 350px !important;
+            height: auto !important;
+            border-radius: 25px !important;
+            box-shadow: 6px 4px 6px #918f91;
+            margin-bottom: 20px;
+          }
           .info span {
             background: #c7a002;
             background-image: -webkit-linear-gradient(top, #c7a002, #5e4f01);
@@ -95,7 +105,6 @@ export default function MenuDetails({ menu }) {
             padding: 8px 14px 10px 8px;
             text-decoration: none;
             margin: 0 10px 0 0;
-            
           }
           .info span:hover {
             text-decoration: none;
@@ -112,6 +121,12 @@ export default function MenuDetails({ menu }) {
             font-variant: small-caps;
             text-transform: uppercase;
             margin-bottom: 20px;
+          }
+          @media (max-width: 576px) {
+            .info span {
+              font-size: 14px;
+              height: 80px;
+            }
           }
         `}</style>
       </div>

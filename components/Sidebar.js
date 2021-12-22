@@ -4,6 +4,7 @@ export default function Sidebar() {
     return (
         <>
             <div className="text-white bg-light sidebar">
+           
                 <ul className="nav flex-column mb-auto">
                     <header className="nav-item ">
                         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto" style={{marginLeft: '40px'}}>
@@ -12,7 +13,7 @@ export default function Sidebar() {
                     </header>
 
                     <li className="nav-item">
-                        <a href="/foods" className="nav-link" aria-current="page">
+                        <a href="#menu" className="nav-link" aria-current="page">
                             Our Food
                          </a>
                     </li>

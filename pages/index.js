@@ -28,7 +28,7 @@ const Home = ({ categories }) => {
 
    return (
      <div>
-       <section className="text-center container">
+       <section className="text-center container" id="menu">
          <div className="row py-lg-5">
            <div className="col-lg-6 col-md-8 col-sm-12 mx-auto">
              <h1 className="fw-bold">OUR MENU</h1>
@@ -43,8 +43,9 @@ const Home = ({ categories }) => {
 
              {categories.map(category => (
                <CardMenu key={category.sys.id} category={category} />
+               
              ))}
-
+  
            </div>
          </div>
        </div>
