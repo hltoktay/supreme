@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Sidebar() {
     return (
@@ -10,7 +11,7 @@ export default function Sidebar() {
                     <header className="nav-item ">
                     <Link href="/">
                         <a  className="d-flex align-items-center mb-3 mb-md-0 me-md-auto" style={{marginLeft: '40px'}}>
-                            <img src="./logo.png" width="160px" height="auto" />
+                            <Image src="./logo.png" width="160px" height="auto" alt="supreme logo" />
                         </a>
                     </Link>
                     </header>
