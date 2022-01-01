@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 export default function Options() {
     return (
@@ -7,13 +8,14 @@ export default function Options() {
         <div className="d-md-flex flex-md-equal w-100 my-md-5 ps-md-5 justify-content-center">
           <div className="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden text-uppercase">
             <div className="my-3 py-3 mx-5">
+            <Link  href="/online">
               <a
                 style={{ cursor: "pointer", textDecoration: 'none' }}
-                href="/online"
                 className="display-5"
               >
                 Order Online
               </a>
+              </Link>
               <p className="lead mt-3">Safe and Fast Delivery</p>
             </div>
             <div
@@ -27,13 +29,15 @@ export default function Options() {
           </div>
           <div className="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden text-uppercase">
             <div className="my-3 p-3 mx-5">
+            <Link href="/locations">
               <a
                 style={{ cursor: "pointer" }}
-                href="/locations"
+                
                 className="display-5"
               >
                 Find Location
               </a>
+            </Link>
               <p className="lead mt-3">Choose location </p>
             </div>
             <div

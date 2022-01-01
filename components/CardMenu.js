@@ -32,14 +32,18 @@ function CardMenu({ category }) {
             </Link>
                 
             <div>
-              <a href={"/categories/" + slug} className="btn btn-outline-info w-100">
+              <Link href={"/categories/" + slug}>
+              <a className="btn btn-outline-info w-100">
                 More Info
             </a>
+            </Link>
             </div>
           <div>
-            <a href="/online" className="btn btn-outline-warning w-100">
+            <Link href="/online">
+            <a className="btn btn-outline-warning w-100">
               Order Now!
             </a>
+            </Link>
           </div>
           </div>
       

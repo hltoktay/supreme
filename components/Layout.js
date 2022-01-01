@@ -34,15 +34,21 @@ export default function Layout({ children }) {
            
             <div className="collapse navbar-collapse px-3" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a className="nav-item nav-link active" href="/">
+              <Link href="/">
+                <a className="nav-item nav-link active" >
                   Our Food <span className="sr-only">(current)</span>
                 </a>
-                <a className="nav-item nav-link" href="/locations">
+                </Link>
+                <Link href="/locations">
+                <a className="nav-item nav-link" >
                   Locations
                 </a>
-                <a className="nav-item nav-link" href="/online">
+                </Link>
+                <Link href="/online">
+                <a className="nav-item nav-link" >
                   Order Online
                 </a>
+                </Link>
               </div>
             </div>
           </nav>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Sidebar() {
     return (
@@ -7,33 +8,43 @@ export default function Sidebar() {
            
                 <ul className="nav flex-column mb-auto">
                     <header className="nav-item ">
-                        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto" style={{marginLeft: '40px'}}>
+                    <Link href="/">
+                        <a  className="d-flex align-items-center mb-3 mb-md-0 me-md-auto" style={{marginLeft: '40px'}}>
                             <img src="./logo.png" width="160px" height="auto" />
                         </a>
+                    </Link>
                     </header>
 
                     <li className="nav-item">
-                        <a href="/" className="nav-link" aria-current="page">
+                    <Link href="/">
+                        <a  className="nav-link" aria-current="page">
                             Our Food
                          </a>
+                    </Link>
                     </li>
 
                     <li className="nav-item">
-                        <a href="/locations" className="nav-link" aria-current="page">
+                    <Link href="/locations">
+                        <a  className="nav-link" aria-current="page">
                             Locations
                          </a>
+                    </Link>
                     </li>
 
                     <li className="nav-item ">
-                        <a href="/online" className="nav-link" aria-current="page">
+                    <Link href="/online">
+                        <a className="nav-link" aria-current="page">
                             Order <br />Online
                          </a>
+                    </Link>
                     </li>
 
                     <li className="nav-item ">
-                        <a href="/contact" className="nav-link" aria-current="page">
+                    <Link href="/contact">
+                        <a className="nav-link" aria-current="page">
                             Contact
                          </a>
+                    </Link>
                     </li>
                 </ul>
 

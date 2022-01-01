@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 export default function Online() {
     return (
@@ -11,27 +12,33 @@ export default function Online() {
              Best way to order food online!
             </p>
             <div className="col-12">
-              <a href="https://deliveroo.co.uk/" className="btn">
+            <Link href="https://deliveroo.co.uk/">
+              <a className="btn">
                 <img
                   width="150px"
                   height="auto"
                   src="/deliveroo.png"
                 />
               </a>
-                <a href="https://www.just-eat.co.uk/" className="btn">
+              </Link>
+              <Link href="https://www.just-eat.co.uk/" >
+                <a className="btn">
                 <img
                   width="150px"
                   height="auto"
                   src="/justeat.png"
                 />
               </a>
-                <a href="https://www.ubereats.com/gb" className="btn">
+              </Link>
+              <Link href="https://www.ubereats.com/gb">
+                <a className="btn">
                 <img
                   width="150px"
                   height="auto"
                   src="/ubereat.png"
                 />
               </a>
+              </Link>
             </div>
           </div>
         </div>
