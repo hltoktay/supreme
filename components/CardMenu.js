@@ -17,6 +17,7 @@ function CardMenu({ category }) {
               src={"https:" + thumbnail.fields.file.url}
               width={thumbnail.fields.file.details.image.width}
               height={thumbnail.fields.file.details.image.height}
+              alt=""
             />
           </div>
 
@@ -31,12 +32,12 @@ function CardMenu({ category }) {
             </Link>
                 
             <div>
-              <a href={"/categories/" + slug} class="btn btn-outline-info w-100">
+              <a href={"/categories/" + slug} className="btn btn-outline-info w-100">
                 More Info
             </a>
             </div>
           <div>
-            <a href="/online" class="btn btn-outline-warning w-100">
+            <a href="/online" className="btn btn-outline-warning w-100">
               Order Now!
             </a>
           </div>

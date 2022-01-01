@@ -18,7 +18,7 @@ export default function locations() {
                 width="300"
                 height="225"
                 style={{ border: "2px solid orange" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </a>
@@ -30,7 +30,7 @@ export default function locations() {
                 width="300"
                 height="225"
                 style={{ border: "2px solid orange" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </a>
