@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript, Script } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import Sidebar from '../components/Sidebar';
 
 class MyDocument extends Document {
