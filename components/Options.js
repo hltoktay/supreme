@@ -9,12 +9,12 @@ export default function Options() {
             <div className="my-3 py-3 mx-5">
               <a
                 style={{ cursor: "pointer", textDecoration: 'none' }}
-                href="/order_online"
-                className="display-4"
+                href="/online"
+                className="display-5"
               >
                 Order Online
               </a>
-              <p className="lead">Safe and Fast Delivery</p>
+              <p className="lead mt-3">Safe and Fast Delivery</p>
             </div>
             <div
               className="bg-light shadow-sm mx-auto"
@@ -30,11 +30,11 @@ export default function Options() {
               <a
                 style={{ cursor: "pointer" }}
                 href="/locations"
-                className="display-4"
+                className="display-5"
               >
                 Find Location
               </a>
-              <p className="lead">Choose location </p>
+              <p className="lead mt-3">Choose location </p>
             </div>
             <div
               className="bg-dark shadow-sm mx-auto"
@@ -46,6 +46,16 @@ export default function Options() {
             ></div>
           </div>
         </div>
+
+        <style jsx>{`
+          .display-5:hover {
+            color: orange
+          }
+
+        `}
+
+
+        </style>
     </section>
       </>
     );

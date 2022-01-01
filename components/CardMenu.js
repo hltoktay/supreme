@@ -9,7 +9,7 @@ function CardMenu({ category }) {
 
   return (
     <main>
-      <div className="col">
+      <div className="col col-sm-12 col-xs-12">
         <div className="card shadow-sm">
 
           <div className="featured">
@@ -26,10 +26,15 @@ function CardMenu({ category }) {
                 className="card-body info text-uppercase"
                 style={{ cursor: "pointer" }}
               >
-                <h4>{title}</h4>
+                <h5>{title}</h5>
               </div>
             </Link>
                 
+            <div>
+              <a href={"/categories/" + slug} class="btn btn-outline-info w-100">
+                More Info
+            </a>
+            </div>
           <div>
             <a href="/online" class="btn btn-outline-warning w-100">
               Order Now!
@@ -54,6 +59,11 @@ function CardMenu({ category }) {
           .card:hover {
             box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.2),
               -1px -1px 7px rgba(0, 0, 0, 0.2);
+          }
+          @media (max-width: 576px) { 
+          .card-body{
+            padding: 0
+          }
           }
         `}
       </style>

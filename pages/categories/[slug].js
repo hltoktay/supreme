@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import { useRouter } from 'next/router'
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
@@ -35,13 +36,16 @@ export async function getStaticProps({ params }) {
     })
 
     return {
-        props: { menu: items[0] }
+        props: { menu: items[0] },
+        revalidate: 1
     }
 
 }
 
 export default function MenuDetails({ menu }) {
     const { featuredImage, title, ingredients, description } = menu.fields
+
+    const router = useRouter()
 
     return (
       <div className="menu-header">
@@ -52,7 +56,6 @@ export default function MenuDetails({ menu }) {
             width={featuredImage.fields.file.details.image.width}
             height={featuredImage.fields.file.details.image.height}
           />
-
           <h2 className="text-uppercase fw-bolder">{title}</h2>
         </div>
 
@@ -65,7 +68,8 @@ export default function MenuDetails({ menu }) {
           ))}
            
         </div>
-      
+         <button className="btn btn-outline-dark mx-3 mt-3" onClick={() => router.back()}>Back to menu</button>
+
 
         <style jsx>{`
           .menu-header {

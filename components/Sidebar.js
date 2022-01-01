@@ -13,7 +13,7 @@ export default function Sidebar() {
                     </header>
 
                     <li className="nav-item">
-                        <a href="#menu" className="nav-link" aria-current="page">
+                        <a href="/" className="nav-link" aria-current="page">
                             Our Food
                          </a>
                     </li>
